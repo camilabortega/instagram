@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FAFAFA;
+}
+
+p,span, textarea {
+    color: #262626;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding {
+    padding: 16px;
+}
+
+.avatar img {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Header da página */
+
+header.main {
+    background: white;
+    border-bottom: 1px solid #DBDBDB;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    /* quando começa a usar o position, ganha a possibilidade de mexer nos 4 pontos do elemento
+    em cima, baixo, direita e esquerda...top, left, righ e bottom*/
+    z-index: 1;
+    /* com ele indico quem vai ficar por cima*/
+}
+@media screen and (max-width: 425px) {
+    header.main {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+header.main .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media screen and (max-width: 425px) {
+    header.main .container {
+        justify-content: space-between;
+    }
+}
+
+header.main .camera {
+    display: none;
+}
+@media screen and (max-width: 425px) {
+    header.main .camera {
+        display: block;
+    }
+}
+
+header.main .search {
+    border: 1px solid #DBDBDB;
+    background: #FAFAFA;
+    border-radius: 2px;
+}
+@media screen and (max-width: 425px) {
+    header.main .search {
+        display: none;
+    }
+} 
+
+header.main .search img{
+    margin: 0 10px;
+}
+
+header.main .search input {
+    border: none;
+    padding: 5px 0;
+    background: transparent;
+}
+
+header.main .header-buttons a {
+    margin: 0 5px;
+}
+@media screen and (max-width: 425px) {
+    header.main .header-buttons a {
+        display: none;
+    }
+
+    header.main .header-buttons a.messages {
+        display: block;
+    }
+}
+
+/* Header da página */
+
+/* Feed da página */
+
+.feed {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 425px) {
+    .feed {
+        margin-top: 0;
+    }
+}
+
+.feed article {
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    max-width: 750px;
+    margin-bottom: 60px;
+}
+@media screen and (max-width: 425px) {
+    .feed article {
+        border: none;
+        margin-bottom: 0;
+    }
+}
+
+.feed article header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px;
+}
+
+.feed article header a.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.feed article header a.user span {
+    margin-left: 20px;
+}
+
+.feed article .article-image {
+    width: auto;
+}
+@media screen and (max-width: 425px) {
+    .feed article .article-image {
+        width: 100%;
+    }
+}
+
+/* Feed da página */
+
+/* Footer da página */
+.feed article footer {
+    background: white;
+}
+
+.feed article footer .article-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feed article footer .article-actions .user-reactions a {
+    padding: 0 8px;
+}
+
+.feed article footer .article-actions .user-reactions a:first-child {
+    padding-left: 0;
+}
+
+.feed article footer .likes-count {
+    margin: 8px 0;
+}
+
+.feed article footer span.hashtags a span {
+    color: #0095f6;
+}
+
+.feed article footer .view-comments {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.feed article footer .view-comments * {
+    color: #8e8e8e;
+}
+
+.feed article footer .view-comments p {
+    cursor: pointer;
+}
+
+.feed article footer .article-comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feed article footer .article-date p {
+    color: #8e8e8e;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.feed article footer form.comment {
+    border-top: 1px solid #DBDBDB;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 56px;
+}
+@media screen and (max-width: 425px) {
+    .feed article footer form.comment {
+        display: none;
+    }
+}
+
+.feed article footer form.comment textarea,
+.feed article footer form.comment textarea:focus {
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 18px;
+    color: #8e8e8e;
+}
+
+.feed article footer form.comment button {
+    border: none;
+    background: transparent;
+    color: #0095f6;
+    opacity: 0.3;
+}
+
+/* Footer da página */
+
+/* Footer do Celular*/
+
+.footer-mobile {
+    display: none;
+}
+@media screen and (max-width: 425px) {
+    .footer-mobile {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: white;
+        border-top: 1px solid #DBDBDB;
+    }
+}
+
+.footer-mobile a {
+    padding: 16px 20px;
+}
+
+/* Footer do Celular*/
