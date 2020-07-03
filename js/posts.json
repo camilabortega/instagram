@@ -1,0 +1,59 @@
+[
+    {
+        "post_id": "p01",
+        "user": {
+            "name": "usuario",
+            "image": "https://via.placeholder.com/22"
+        },
+        "post_image": "https://via.placeholder.com/750",
+        "likes": 0,
+        "post_text": "Texto do post",
+        "hashtags":["#hashtag1"],
+        "comments": [
+            {
+                "comment_id": "p01c01",
+                "comment_user": "outro_usuario",
+                "comment_text": "Comentário",
+                "comment_hashtags": ["#hashtag1"]
+            }
+        ]
+    },
+    {
+        "post_id": "p02",
+        "user": {
+            "name": "usuario",
+            "image": "https://via.placeholder.com/22"
+        },
+        "post_image": "https://via.placeholder.com/750",
+        "likes": 0,
+        "post_text": "Texto do post",
+        "hashtags":["#hashtag1"],
+        "comments": [
+            {
+                "comment_id": "p02c01",
+                "comment_user": "outro_usuario",
+                "comment_text": "Comentário",
+                "comment_hashtags": ["#hashtag1"]
+            }
+        ]
+    },
+    {
+        "post_id": "p03",
+        "user": {
+            "name": "usuario",
+            "image": "https://via.placeholder.com/22"
+        },
+        "post_image": "https://via.placeholder.com/750",
+        "likes": 0,
+        "post_text": "Texto do post",
+        "hashtags":["#hashtag1"],
+        "comments": [
+            {
+                "comment_id": "p03c01",
+                "comment_user": "outro_usuario",
+                "comment_text": "Comentário",
+                "comment_hashtags": ["#hashtag1"]
+            }
+        ]
+    }
+]
