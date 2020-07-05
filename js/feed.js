@@ -65,7 +65,7 @@ setTimeout(function(){
             articleActions.className = "article-actions";
             articleActions.innerHTML = `
             <div class="user-reactions">
-                <a href="#like"><img id="like01" class="like" src="svg/like.svg" alt="Curtir"></a>
+                <a href="#like"><img onclick="like(this, ${post.likes}, '${post.post_id}');" id="like-${post.post_id}" class="like" src="svg/like.svg" alt="Curtir"></a>
                 <a href="#comment"><img src="svg/comment.svg" alt="Comentar"></a>
                 <a href="#send"><img src="svg/messages.svg" alt="Enviar"></a>
             </div>
@@ -161,3 +161,9 @@ setTimeout(function(){
         console.log(error);
     });
 }, 2000);
+
+function like(element, likes, post_id){
+    element.src = "svg/liked.svg";
+    var newLikes = likes + 1;
+    document.querySelector("#likes-"+post_id).innerHTML = newLikes;
+}
