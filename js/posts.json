@@ -8,6 +8,7 @@
         "post_image": "https://via.placeholder.com/750",
         "likes": 0,
         "post_text": "Texto do post",
+        "post_date": "1 hour ago",
         "hashtags":["#hashtag1"],
         "comments": [
             {
@@ -27,6 +28,7 @@
         "post_image": "https://via.placeholder.com/750",
         "likes": 0,
         "post_text": "Texto do post",
+        "post_date": "ontem",
         "hashtags":["#hashtag1"],
         "comments": [
             {
@@ -46,6 +48,7 @@
         "post_image": "https://via.placeholder.com/750",
         "likes": 0,
         "post_text": "Texto do post",
+        "post_date": "03 Mar, 2020",
         "hashtags":["#hashtag1"],
         "comments": [
             {
